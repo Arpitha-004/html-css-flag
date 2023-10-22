@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+        width: 1350px;
+        height: 900px;
+        background-color: #ff9933;
+        position: relative;
+    }
+    .flag > div{
+        width: 1350px;
+        height: 300px;
+        background-color: #ffffff;
+        position: relative;
+        top: 300px;
+    }
+    #green{
+        width: 1350px;
+        height: 300px;
+        position: absolute;
+        background-color: #128807;
+        top: 300px;
+    }
+    div.wheel{
+      height: 270px;
+      width: 270px;
+      border: 3px solid darkblue;
+
+      border-radius: 50%;
+      position: relative;
+      margin: 0 auto;
+      bottom: 101%;
+    }
+    div.wheel .spokeline{
+      height: 100%;
+      width: 5px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      background: darkblue;
+    }
+    .spokeline:nth-child(1){
+      transform: rotate(15deg);
+    }
+    .spokeline:nth-child(2){
+      transform: rotate(30deg);
+    }
+    .spokeline:nth-child(3){
+      transform: rotate(45deg);
+    }
+    .spokeline:nth-child(4){
+      transform: rotate(60deg);
+    }
+    .spokeline:nth-child(5){
+      transform: rotate(75deg);
+    }
+    .spokeline:nth-child(6){
+      transform: rotate(90deg);
+    }
+    .spokeline:nth-child(7){
+      transform: rotate(105deg);
+    }
+    .spokeline:nth-child(8){
+      transform: rotate(120deg);
+    }
+    .spokeline:nth-child(9){
+      transform: rotate(135deg);
+    }
+    .spokeline:nth-child(10){
+      transform: rotate(150deg);
+    }
+    .spokeline:nth-child(11){
+      transform: rotate(165deg);
+    }
+    .spokeline:nth-child(12){
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+     <div>
+      <div id="green">
+        <p><div class="wheel">
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+  <span class="spokeline"></span>
+</p>
+      </div>
+     </div>
+  </div>
+  </div>
+
+</body>
+</html>
